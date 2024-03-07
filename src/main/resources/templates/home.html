@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Kai's Website</title>
+    <link th:rel="stylesheet" th:href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#top">Top</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#education">Education</a>
+        <a href="#technical_skill">Technical Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#interests">Interests</a>
+    </nav>
+    <div class="content-wrapper">
+        <section id="top"><h2>Welcome to Kai's Page</h2></section>
+
+
+        <img th:src="@{images/myPicture.jpg}" class="circular-top-right">
+        <section id="about">
+            <h2>About Me</h2>
+            <h2>Kaicheng (Kai) Chu</h2>
+            <p class="paragraph">As a third-year engineering student specializing in Computer Science and Statistics,
+                I am currently on the lookout for exciting opportunities for the summer of 2024.
+                With a keen interest in both Full-Stack Development and Data Analytics, I am eager to immerse myself in real-life projects that challenge me and expand my learning.</p>
+            <a href="www.linkedin.com/in/kaicheng-chu-a96b6821b" target="_blank">My LinkedIn</a>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <h3>email: chukaicheng1@gmail.com | cbf6ah@virginia.edu</h3>
+            <h3>phone: 434-2842773</h3>
+        </section>
+
+        <section id="education">
+            <h2>University of Virginia</h2>
+            <p>Major: BS in Computer Science & BA in Statistics</p>
+            <P>Expected Graduation: May, 2025</P>
+            <p>Honors: Dean's List for five consecutive semesters</p>
+            <p>Relevant Course Work:</p>
+            <p>Advanced Software Development, Machine Learning, Statistical Machine Learning, Data Structure and Algorithm, Computer
+                Systems and Organization, Software Development Essential, Intro to Regression Analysis, Data Analysis with Python, From Data to Knowledge</p>
+        </section>
+
+        <section id="technical_skill">
+            <h3>Programming Languages:</h3>
+            <p>     Python, Java, R, C, SQL, MATLAB, HTML, SAS</p>
+            <h3>Software Development:</h3>
+            <p>     Git, Django, Spring Boot, and Heroku</p>
+            <h3>Language: </h3>
+            <p>     Chinese, English</p>
+        </section>
+
+        <section id="experience">
+        <h2>Research</h2>
+        <p>Currently serving as a research assistant, I am collaborating with Professor Apostolellis on the project's second phase, titled "Creating Effective Project-Based Courses: Personal Relevance and Its Relation to Successful Group Work," focusing specifically on the data analysis component.</p>
+        <h2>Internship</h2>
+        <h3 style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Junior Java Engineer at Hangzhou Risen Information Technology Co (Java-Spring Boot)</span>
+            <span>2023.6 - 2023.7</span>
+        </h3>
+        <p>During my internship as a Junior Java Engineer at Hangzhou Risen Information Technology Co., I honed my skills in a suite of software development tools. I gained efficiency in Maven for effective project dependency management, SVN for robust source code version control, and leveraged the capabilities of Spring Boot for rapid application development. The first practice task was an implementation of a PDF to Word conversion interface using Java, which brought me a common sense of coding standards. I also led the development of an Online Bulletin web application, employing the MVC framework with a keen focus on integrating a user-friendly HTML front-end and a reliable MySQL back-end. Moreover, my role involved direct engagement with clients, where I was eliciting and synthesizing their requirements. As a hired employee, I also attended the weekly meeting and wrote weekly report.</p>
+
+        <h2>Part-Time Job @ UVA</h2>
+
+        <p style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Teacher Assistant of Software Development Essential (Java)</span>
+            <span>2024.2 - Present</span>
+        </p>
+
+        <p style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Engineer School Tutor</span>
+            <span>2024.2 - Present</span>
+        </p>
+
+        <p style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Teacher Assistant of Computer System and Organization 1 (Linux, C)</span>
+            <span>2023.1 - 2023.5</span>
+        </p>
+
+        <p style="display: flex; justify-content: space-between; align-items: center;">
+            <span>Teacher Assistant of Introduction to Engineering</span>
+            <span>2022.8-2022.12</span>
+        </p>
+        </section>
+
+        <section id="projects">
+            <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                <span>“Charlottesville Travel Planner” Group Project-Test Manager (Python-Django)</span>
+                <span>2023.9-2023.12</span>
+            </h3>
+            <a href="https://a12plannerapp-7070b47869a6.herokuapp.com/" target="_blank">Project Link</a>
+            <p>Integrated third-party APIs including Google Login authentication and Google Maps for intuitive location-based services.</p>
+            <p>Built Submit-Review model using MVC architecture and separated regular user and administrator sites.</p>
+            <p>Conducted tests across the application including unit, system, and integration testing to ensure reliability and performance.</p>
+            <p>Facilitated a beta testing phase with classmates, gathering critical user feedback and implementing changes.</p>
+
+            <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                <span>“Graduate Program Recommendation System” (Python)</span>
+                <span>2023.9-2023.12</span>
+            </h3>
+            <p>Description: The primary aim of this project is the creation of a recommendation system designed to provide prediction to graduate
+                program admission decisions, thereby narrowing the information gap and aiding administrative decision-making. The
+                system will leverage a multi-criteria machine learning algorithm to evaluate and match applicants’ profiles with program
+                prerequisites. The expected outcome is an enhancement of the application process for prospective students, providing a
+                streamlined and targeted approach to navigating the complexities of graduate program admissions. The anticipated
+                benefits of such a system include time and resource efficiency for the applicants and an improved mechanism for
+                programs to identify and attract candidates who fulfill their specific criteria.</p>
+            <p>Utilized pandas for data aggregation, employed word embedding and One-Hot to process selected categorical variables.</p>
+            <p>Developed a Neural Network using Keras, applied Ensemble Learning with scikit-learn, and implemented KNN, optimizing
+                for recommendation accuracy.</p>
+            <p>Analyzed, interpreted, and compared the results across different models, and perform video presentation on the results.</p>
+
+            <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                <span>“CyberChat: Bangladesh Bank Robbery of 2016”</span>
+                <span>2024.2</span>
+            </h3>
+            <a href="https://www.youtube.com/watch?v=ed79ub9cCKg" target="_blank">Link to Video</a>
+
+            <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                <span>“Global Life Expectancy in 2015 Analysis” (R)</span>
+                <span>2023.9-2023.12</span>
+            </h3>
+            <p>Performed thorough EDA to identify significant patterns and trends, selected critical features such as infant death rate, GDP,
+                BMI, thinness for in-depth analysis.</p>
+            <p>Applied feature engineering techniques to refine and prepare the data, utilized various machine learning methods including
+                shrinkage, decision trees, and logistic regression for predictive modeling.</p>
+            <p>Compiled a detailed non-technical report and produced a video presentation of research outcomes and statistical insights.</p>
+
+            <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                <span>“Global Life Expectancy in 2015 Analysis” (R)</span>
+                <span>2023.9-2023.12</span>
+            </h3>
+
+            <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                <span>“Factors Influencing Per Capita Income” (SAS)</span>
+                <span>2022.9-2022.12</span>
+            </h3>
+            <p>Managed data collection and feature engineering, including data sourcing from reputable databases, data cleansing to ensure
+                integrity, combining multiple features into one, and exploratory data analysis to uncover underlying patterns.</p>
+            <p>Applied multiple regression techniques, including linear and logistic regression, and ANOVA to identify significant
+                predictors. Employed bootstrapping methods to estimate model accuracy and ensure robustness.</p>
+            <p>Synthesized research findings into a comprehensive poster, presented to an academic audience including the Dean of the
+                Statistics Department.</p>
+        </section>
+            <section id="interests">
+                <h2>Club</h2>
+                <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                    <span>XiaCunTuCaoJun</span>
+                    <span>2022.10-present</span>
+                </h3>
+                <p>What we do: Every week, we collect everyone's complaints about life or unusual stories and post them on our public WeChat account. Additionally, every year we hold an offline Roasting Convention, providing students with debate topics for discussion.</p>
+                <h2>Others</h2>
+                <p>Tennis</p>
+                <p>Climbing</p>
+                <p>League of Legends & TFT</p>
+            </section>
+
+    </div>
+
+</body>
+</html>
